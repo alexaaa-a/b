@@ -97,7 +97,7 @@ def help_command(message):
     bot.send_message(message.chat.id, "Лягушкам не нужно пить воду, поскольку они поглощают ее через свою кожу.", reply_markup=menu_keyboard) 
     
     
-    @bot.message_handler(func=lambda message: text_button_3 == message.text)
+@bot.message_handler(func=lambda message: text_button_3 == message.text)
 def help_command(message):
     bot.send_message(message.chat.id, "Самая большая лягушка в мире-это лягушка-голиаф из Камеруна в Западной Африке. Их тело может быть длиной до 30 см, а вес - более 3 кг.", reply_markup=menu_keyboard) 
 
